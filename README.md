@@ -1,1 +1,1 @@
-# Face-API---Visual-Studio
+# Azure Face API - Visual Studio
