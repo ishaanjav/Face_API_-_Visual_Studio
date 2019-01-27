@@ -10,20 +10,19 @@ using Microsoft.ProjectOxford.Common.Contract;
 using Microsoft.ProjectOxford.Common;
 using Microsoft.ProjectOxford.Face.Contract;
 
-
-
 namespace FaceAPIRecognition
 {
     class Program
     {
         FaceServiceClient faceServiceClient = new FaceServiceClient("<YOUR API KEY HERE>", "<YOUR API ENDPOINT HERE>");
         static void Main(string[] args)
-        {
-        
+        {      
             //Add Multiple people.
+            //You must specify the file directory containing images of the person in the definePeople() function.
             new Program().definePeople();
             
             //Add an individual person.
+            //You must specify the file directory containing images of the person in the addIndividual() function.
             //new Program().addIndividual(/*Name of Person*/);
 
             //Train the Person Group.
