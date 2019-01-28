@@ -21,7 +21,7 @@ Microsoft Azure has documentation on [Detecting Faces](https://docs.microsoft.co
      * Select "Manage NuGet Packages"
      * Click the "Browse" tab and select "Include prerelease"
      * Find and install this package or a similar package, *(if there has been an update)*: `Microsoft.Azure.CognitiveServices.Vision.Face 2.2.0-preview`
-  * After creating the project, open the `.cs` file and paste the code from this repository's [`Program.cs`](https://github.com/ishaanjav/Azure_Face_API_-_Visual_Studio/blob/master/Program.cs) into your `.cs` file. Then, follow the steps below to get the [Microsoft API Key](#2.-get-the-microsoft-face-api), Add the API Key and Endpoint, and Specify the Directory of the Images.
+  * After creating the project, open the `.cs` file and paste the code from this repository's [`Program.cs`](https://github.com/ishaanjav/Azure_Face_API_-_Visual_Studio/blob/master/Program.cs) into your `.cs` file. Then, follow the steps below to get the Microsoft API Key, Add the API Key and Endpoint, and Specify the Directory of the Images.
      
 ### 2. Get the Microsoft Face API
   * **Making the Azure Account:**
@@ -64,3 +64,10 @@ replace the `<Directory with images of person>` with the directory of an images 
 - add people to Person Groups
 - train the Person Groups
 - and identify people
+
+-----
+## Other Repositories
+**While this is a simple Console Application that can be used for facial identification, I have repositories for Android apps that use other APIs to do facial recognition and also use the Microsoft Face API for facial analysis.** Below is a list of some of those repositories:
+
+- [**Face Analyzer**](https://github.com/ishaanjav/Face_Analyzer): The purpose of this Android app is to utilize the Microsoft Face API to not only detect individual faces in an image, but also for each face provide information such as emotions, the estimated age, gender, and more. [README](https://github.com/ishaanjav/Face_Analyzer/blob/master/README.md)
+- [**Kairos Face Recognition**](https://github.com/ishaanjav/Kairos_Face_Recognition): The purpose of this Android app is to use Kairos's SDK for Android in order to implement facial recognition. Features of this app include: registering and identifying users when given an image. [README](https://github.com/ishaanjav/Kairos_Face_Recognition/blob/master/README.md)
