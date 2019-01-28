@@ -21,7 +21,7 @@ Microsoft Azure has documentation on [Detecting Faces](https://docs.microsoft.co
      * Select "Manage NuGet Packages"
      * Click the "Browse" tab and select "Include prerelease"
      * Find and install this package or a similar package, *(if there has been an update)*: `Microsoft.Azure.CognitiveServices.Vision.Face 2.2.0-preview`
-  * After creating the project, open the `.cs` file and paste the code from this repository's [`Program.cs`](https://github.com/ishaanjav/Azure_Face_API_-_Visual_Studio/blob/master/Program.cs) into your `.cs` file. Then, follow the steps below to get the Microsoft API Key, Add the API Key and Endpoint, and Specify the Directory of the Images.
+  * After creating the project, open the `.cs` file and paste the code from this repository's [`Program.cs`](https://github.com/ishaanjav/Azure_Face_API_-_Visual_Studio/blob/master/Program.cs) into your `.cs` file. Then, follow the steps below to get the [Microsoft API Key](#2.-get-the-microsoft-face-api), Add the API Key and Endpoint, and Specify the Directory of the Images.
      
 ### 2. Get the Microsoft Face API
   * **Making the Azure Account:**
