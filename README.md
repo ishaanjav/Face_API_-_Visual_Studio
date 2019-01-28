@@ -12,6 +12,7 @@ Microsoft Azure has documentation on [Detecting Faces](https://docs.microsoft.co
      * Select "Manage NuGet Packages"
      * Click the "Browse" tab and select "Include prerelease"
      * Find and install this package or a similar package, *(if there has been an update)*: `Microsoft.Azure.CognitiveServices.Vision.Face 2.2.0-preview`
+  * After creating the project, open the `.cs` file and paste the code from this repository's [`Program.cs`](https://github.com/ishaanjav/Azure_Face_API_-_Visual_Studio/blob/master/Program.cs) into your `.cs` file. Then, follow the steps below to get the [Microsoft API Key](#get-the-microsoft-face-api), [Add the API Key and Endpoint](#add-the-api-key-and-endpoint), and [Specify the Directory of the Images](#specify-the-directory-of-the-images).
      
 ### 2. Get the Microsoft Face API
   * **Making the Azure Account:**
@@ -32,7 +33,7 @@ In order to use the Face API, you must get an API Subscription Key from the Azur
 
 You should now be able to see two different subscription keys that you can use. Follow the additional instructions to see how to use the API Key in the application.
 
-### 3. Add the  API Key and Endpoint
+### 3. Add the API Key and Endpoint
 In `Program.cs`, on Line 17 you may see:
 
     FaceServiceClient faceServiceClient = new FaceServiceClient("<YOUR API KEY HERE>", "<YOUR API ENDPOINT HERE>");
@@ -41,3 +42,13 @@ In `Program.cs`, on Line 17 you may see:
     "https://<LOCATION>/face/v1.0"
   
 where `<LOCATION>` should be replaced with something like `uksouth.api.cognitive.microsoft.com` or `japaneast.api.cognitive.microsoft.com`. All of these can be found, listed at [this link](https://westus.dev.cognitive.microsoft.com/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236).
+
+### 4. Specify the Directories of the Images
+Now that you have gotten your API Key and Endpoint and used them as the constructors of `FaceServiceClient` on Line 17, you have to specify the directories of the images for the people that will be identified. The `identifyFace()` function accepts a String as a parameter with the directory of an image containing a face, but the other functions, *such as `addIndividual` and `definePeople`*, require you to change the directory in the function itself. 
+
+Where it says:
+
+    @"<Directory with images of person>"   //Line 40.
+    //OR:
+    @"<Directory with images of Person #   //Lines 122, 139, 151.
+replace the `<Directory with images of person>` with the directory of an images folder on your computer.
