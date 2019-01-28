@@ -1,5 +1,14 @@
 # Azure Face API - Visual Studio
-**The purpose of this repository is to provide code to a Console Application in C# that uses the Microsoft Azure Face API to add people to Person Groups and then identify people given images.** Below, you can find the instructions for setting up the app and using and modifying the code for your own purposes.
+**The purpose of this repository is to provide code for a Console Application in C# that uses the Microsoft Azure Face API to add people to Person Groups and then identify people given images.** Below, you can find the instructions for setting up the app and using and modifying the code for your own purposes.
+
+-----
+## Usage
+###### If you have not already done so, refer to the [Setup Section](#setup) to setup the Console Application using your own Microsoft Face API Key and images of people. 
+Using the application is rather simple once you have it setup. Simply run each of the functions to do different things:
+1. `definePeple()`: Use this to create a `CreatePersonResult` object for each person. Inside, `definePeople`, the function `detectRegisterFace()` is called to **add images for each face in an image and add it to the corresponding person**. **IMPORTANT:** It is in `detectRegisterFace()`, lines 122, 139, and 151 that you must specify the directory of a folder contain `jpg` images of each person. 
+2. `trainPersonGroup()` is called to **train the Person Group** on the people and their images. There are no parameters or specific directories required for this function.
+3. `identifyFace()` is called to **identify a face**. It accepts **one parameter: the directory containing an image of a person**. It then gets the best match of the person in the image and prints their name in the Console. If it is not able to identify the person in the image, then it doesn't display anything.
+
 
 -----
 
@@ -50,9 +59,8 @@ Where it says:
 
     @"<Directory with images of person>"   //Line 40.
     //OR:
-    @"<Directory with images of Person #   //Lines 122, 139, 151.
+    @"<Directory with images of Person #>"   //Lines 122, 139, 151.
 replace the `<Directory with images of person>` with the directory of an images folder on your computer. Images have been provided in this repository which you can download to test the Console Application. Once you have replaced `<Directory with images of Person 1` with the actual directories of images, you can run the functions one by one, *starting with `definePeople()`* to:
 - add people to Person Groups
 - train the Person Groups
 - and identify people
-
