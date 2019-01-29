@@ -4,7 +4,7 @@
 -----
 ## Usage
 ###### If you have not already done so, refer to the [Setup Section](#setup) to setup the Console Application using your own Microsoft Face API Key and images of people. 
-Using the application is simple once it is setup. Simply run each of the functions in `Program.cs` to do different tasks:
+Using the application is simple once it is setup. Simply **run each of the functions in `Program.cs`** to do different tasks:
 1. `definePeple()`: Use this to create a `CreatePersonResult` object for each person. Inside, `definePeople`, the function `detectRegisterFace()` is called to **add images for each face in an image and add it to the corresponding person**. **IMPORTANT:** It is in `detectRegisterFace()`, lines 122, 139, and 151 that you must specify the directory of a folder contain `jpg` images of each person. 
 2. `trainPersonGroup()` is called to **train the Person Group** on the people and their images. There are no parameters or specific directories required for this function.
 3. `identifyFace()` is called to **identify a face**. It accepts **one parameter: the directory containing an image of a person**. It then gets the best match of the person in the image and prints their name in the Console. If it is not able to identify the person in the image, then it doesn't display anything.
