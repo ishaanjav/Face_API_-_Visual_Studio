@@ -68,6 +68,6 @@ replace the `<Directory with images of person>` with the directory of an images 
 -----
 ## Other Repositories
 **While this is a simple Console Application that can be used for facial identification, I also have repositories for Android apps that use the Microsoft Face API for facial analysis and Kairos's API to do facial recognition.** Below is a list of some of those repositories:
-
+- [**Face API - Identification in Android**](https://github.com/ishaanjav/Face_API_-_Indentification_in_Android): A closely-related repository for an Android app that also uses the Microsoft Face API for facial detection and identification. [README](https://github.com/ishaanjav/Face_API_-_Indentification_in_Android/blob/master/README.md)
 - [**Face Analyzer**](https://github.com/ishaanjav/Face_Analyzer): The purpose of this Android app is to utilize the Microsoft Face API to not only detect individual faces in an image, but also for each face provide information such as emotions, the estimated age, gender, and more. [README](https://github.com/ishaanjav/Face_Analyzer/blob/master/README.md)
 - [**Kairos Face Recognition**](https://github.com/ishaanjav/Kairos_Face_Recognition): The purpose of this Android app is to use Kairos's SDK for Android in order to implement facial recognition. Features of this app include: registering and identifying users when given an image. [README](https://github.com/ishaanjav/Kairos_Face_Recognition/blob/master/README.md)
