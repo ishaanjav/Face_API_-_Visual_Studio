@@ -1,7 +1,7 @@
 # Face API - Visual Studio
 **The purpose of this repository is to provide code for a Console Application in C# that uses the Microsoft Azure Face API to add people to Person Groups and then identify people given images.** Below, you can find the instructions for setting up the app and using and modifying the code for your own purposes. 
 
-**You simply have to provide the program an image of a person's face for the recognition to take place.** I also have a relevant [Android app repository](https://github.com/ishaanjav/Face_API_-_Identification_in_Android) which can be used for face identification after adding people to Person Groups in C# below.
+**You simply have to give the program an image of a person's face for it to recognize.** I also have a relevant [Android app repository](https://github.com/ishaanjav/Face_API_-_Identification_in_Android) which can be used for face identification after adding people to Person Groups in C# below.
 
 -----
 ## Usage
